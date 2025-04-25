@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layers>
+  <layer
+      name="sinar.opportunities"
+      interface="sinar.opportunities.interfaces.ISinarOpportunitiesLayer"
+      />
+</layers>

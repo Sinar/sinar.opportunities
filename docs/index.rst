@@ -1,0 +1,5 @@
+===================
+sinar.opportunities
+===================
+
+User documentation
