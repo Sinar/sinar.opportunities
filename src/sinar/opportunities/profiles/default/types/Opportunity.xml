@@ -58,6 +58,7 @@
     <!--<element value="plone.navigationroot" />-->
     <!--<element value="plone.selectablecontrainstypes" />-->
     <element value="sinar.opportunities.opportunity_type" />
+    <element value="sinar.opportunities.opportunity_deadline" />
   </property>
 
   <!-- View information -->

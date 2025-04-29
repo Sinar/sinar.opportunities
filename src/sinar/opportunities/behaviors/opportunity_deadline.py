@@ -20,9 +20,15 @@ class IOpportunityDeadline(model.Schema):
     """
     """
 
-    project = schema.TextLine(
-        title=_(u'Project'),
-        description=_(u'Give in a project name'),
+    opportunity_open = schema.Date(
+        title=_('Open Date'),
+        description=_('Opportunity Open Date'),
+        required=False,
+    )
+
+    opportunity_close = schema.Date(
+        title=_('Closing Date'),
+        description=_('Opportunity Closing Date or Deadline'),
         required=False,
     )
 
@@ -34,11 +40,21 @@ class OpportunityDeadline(object):
         self.context = context
 
     @property
-    def project(self):
-        if safe_hasattr(self.context, 'project'):
-            return self.context.project
+    def opportunity_open(self):
+        if safe_hasattr(self.context, 'opportunity_open'):
+            return self.context.opportunity_open
         return None
 
-    @project.setter
-    def project(self, value):
-        self.context.project = value
+    @opportunity_open.setter
+    def opportunity_open(self, value):
+        self.context.opportunity_open = value
+
+    @property
+    def opportunity_close(self):
+        if safe_hasattr(self.context, 'opportunity_close'):
+            return self.context.opportunity_close
+        return None
+
+    @opportunity_close.setter
+    def opportunity_close(self, value):
+        self.context.opportunity_close = value
