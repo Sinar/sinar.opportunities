@@ -11,22 +11,11 @@
 
     <plone:behavior
         name="sinar.opportunities.opportunity_type"
-        title="OpportunityType"
+        title="OpportunityTypes"
         description="Selection of Civil Society Opportunities"
-        provides=".opportunity_type.IOpportunityType"
-        factory=".opportunity_type.OpportunityType"
-        marker=".opportunity_type.IOpportunityTypeMarker"
+        provides=".opportunity_type.IOpportunityTypes"
+        factory=".opportunity_type.OpportunityTypes"
+        marker=".opportunity_type.IOpportunityTypesMarker"
         />
-
-
-    <plone:behavior
-        name="sinar.opportunities.opportunity_type"
-        title="OpportunityType"
-        description="Types of Opportunities"
-        provides=".opportunity_type.IOpportunityType"
-        factory=".opportunity_type.OpportunityType"
-        marker=".opportunity_type.IOpportunityTypeMarker"
-        />
-
 
 </configure>

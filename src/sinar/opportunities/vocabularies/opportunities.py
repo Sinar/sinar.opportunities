@@ -25,8 +25,58 @@ class Opportunities(object):
         # Just an example list of content for our vocabulary,
         # this can be any static or dynamic data, a catalog result for example.
         items = [
-            VocabItem(u'sony-a7r-iii', _(u'Sony Aplha 7R III')),
-            VocabItem(u'canon-5d-iv', _(u'Canon 5D IV')),
+
+            # Invitations for NGOs, civil society groups, or tech
+            # developers to collaborate on projects, initiatives, or
+            # campaigns.
+            VocabItem('coalitions', _('Coalition Building, \
+                                      Call for Partnerships and Joint Campaigns')),
+
+            # Invitations to submit project proposals or bid for
+            # consultancy or service contracts, often issued by NGOs,
+            # governments, or international organizations
+            VocabItem('cfp', _('Call for Proposals / Tenders')),
+
+            # Tech competitions, hackathons, innovation challenges, or
+            # calls for project submissions offering prizes or
+            # recognition
+            VocabItem('competitions', _('Competitions')),
+
+            # Open calls for participation, speaking engagements, or
+            # registrations for civic tech, human rights, digital
+            # innovation conferences or forums
+            VocabItem('events', _('Event Participation/Call for Sessions')),
+
+            # Competitive programs offering individuals financial
+            # support, mentorship, and project development resources,
+            # often for advocacy, research, leadership, or tech
+            # innovation
+            VocabItem('fellowships', _('Fellowships')),
+
+            # Short-term work experiences intended for skills-building
+            # and civic contribution
+            VocabItem('internships', _('Internships')),
+
+            # Open employment positions at NGOs, civic tech
+            # organizations, public interest tech groups, or related
+            # sectors.
+            VocabItem('jobs', _('Jobs')),
+
+
+            # Financial aid opportunities for formal education
+            # (undergraduate, graduate, certifications) related to
+            # technology, governance, journalism, or human rights.
+            VocabItem('scholarships', _('Scholarships')),
+
+            # Volunteer programs, or unpaid roles intended for
+            # skills-building and civic contribution
+            VocabItem('voluteering', _('Volunteering')),
+
+            # Learning opportunities including workshops, bootcamps, training series,
+            # or short courses on civic tech, governance, digital security, open data,
+            # or related topics.
+            VocabItem('workshops', _('Training and Workshops')),
+
         ]
 
         # Fix context if you are using the vocabulary in DataGridField.

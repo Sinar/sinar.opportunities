@@ -6,7 +6,7 @@
 
     <utility
         component=".opportunities.OpportunitiesFactory"
-        name="sinar.opportunities.Opportunities"
+        name="sinar.opportunities.opportunity_types"
     />
 
 
