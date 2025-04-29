@@ -10,6 +10,16 @@
     <!-- -*- extra stuff goes here -*- -->
 
     <plone:behavior
+        name="sinar.opportunities.opportunity_deadline"
+        title="OpportunityDeadline"
+        description="Start and End Dates for Opportunities"
+        provides=".opportunity_deadline.IOpportunityDeadline"
+        factory=".opportunity_deadline.OpportunityDeadline"
+        marker=".opportunity_deadline.IOpportunityDeadlineMarker"
+        />
+
+
+    <plone:behavior
         name="sinar.opportunities.opportunity_type"
         title="OpportunityTypes"
         description="Selection of Civil Society Opportunities"
