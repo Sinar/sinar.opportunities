@@ -1,0 +1,18 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="sinar.opportunities">
+
+ <!-- -*- extra stuff goes here -*- -->
+
+  <browser:page
+    name="opportunity-view"
+    for="Opportunity"
+    class=".opportunity_view.OpportunityView"
+    template="opportunity_view.pt"
+    permission="zope2.View"
+    layer="sinar.opportunities.interfaces.ISinarOpportunitiesLayer"
+    />
+
+</configure>
