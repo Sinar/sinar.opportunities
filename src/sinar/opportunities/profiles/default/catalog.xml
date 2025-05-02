@@ -1,4 +1,15 @@
 <?xml version="1.0"?>
 <object name="portal_catalog">
-  <!--<column value="my_meta_column"/>-->
+    <index name="opportunity_types" meta_type="KeywordIndex">
+        <indexed_attr value="opportunity_types" />
+    </index>
+    <column value="opportunity_types" />
+    <index name="opportunity_open" meta_type="DateIndex">
+        <indexed_attr value="opportunity_open" />
+    </index>
+    <column value="opportunity_open" />
+    <index name="opportunity_close" meta_type="DateIndex">
+        <indexed_attr value="opportunity_close" />
+    </index>
+    <column value="opportunity_close" />
 </object>
