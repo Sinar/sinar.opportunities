@@ -1,0 +1,48 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      i18n:domain="p6.docs"
+      metal:use-macro="context/main_template/macros/master">
+<body>
+
+    <metal:main fill-slot="main">
+        <tal:main-macro metal:define-macro="main">
+
+      <div tal:replace="structure provider:plone.abovecontenttitle" />
+
+          <h2 class="documentFirstHeading" i18n:translate="">
+               <span tal:content="context/title" /> 
+          </h2>
+
+
+      <div tal:replace="structure provider:plone.belowcontenttitle" />
+
+          <h4>
+          <span tal:repeat="type view/opportunity_type_titles">
+                    <span class="badge bg-primary" tal:content="type" />
+          </span>
+          </h4>
+
+
+      <div id="opportunity-date">
+        <dl>  
+            <dt>Opening Date</dt>
+            <dd tal:content="context/opportunity_open | nothing"/>
+            <dt>Closing Date</dt>
+            <dd tal:content="context/opportunity_close | nothing" />
+        </dl>
+      </div>
+
+
+  <div tal:content="structure context/text/output | nothing" />
+
+  <div tal:replace="structure provider:plone.belowcontentbody" />
+
+
+      </tal:main-macro>
+    </metal:main>
+
+
+</body>
+</html>
