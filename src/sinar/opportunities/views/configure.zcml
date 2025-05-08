@@ -8,7 +8,7 @@
 
   <browser:page
     name="opportunity-view"
-    for="Opportunity"
+    for="*"
     class=".opportunity_view.OpportunityView"
     template="opportunity_view.pt"
     permission="zope2.View"

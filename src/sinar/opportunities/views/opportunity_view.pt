@@ -2,34 +2,47 @@
       xmlns:metal="http://xml.zope.org/namespaces/metal"
       xmlns:tal="http://xml.zope.org/namespaces/tal"
       xmlns:i18n="http://xml.zope.org/namespaces/i18n"
-      i18n:domain="sinar.opportunities"
+      i18n:domain="p6.docs"
       metal:use-macro="context/main_template/macros/master">
 <body>
 
-  <metal:custom_title fill-slot="content-title">
-    <h1 tal:replace="structure context/@@title" />
+    <metal:main fill-slot="main">
+        <tal:main-macro metal:define-macro="main">
 
-    <!-- @@title view template: -->
-    <!--
-    <h1 tal:define="title context/Title" tal:condition="title" tal:content="title">
-      Title or id
-    </h1>
-    -->
+      <div tal:replace="structure provider:plone.abovecontenttitle" />
 
-  </metal:custom_title>
+          <h2 class="documentFirstHeading" i18n:translate="">
+               <span tal:content="context/title" /> 
+          </h2>
 
-  <metal:custom_description fill-slot="content-description">
-    <p tal:replace="structure context/@@description" />
-  </metal:custom_description>
 
-  <metal:content-core fill-slot="content-core">
-  <metal:block define-macro="content-core">
+      <div tal:replace="structure provider:plone.belowcontenttitle" />
 
-    <h2>Main content</h2>
-    <!--<div tal:replace="view/my_custom_view_method" />-->
-    <!--<div tal:replace="context/my_custom_field" />-->
+          <h4>
+          <span tal:repeat="type view/opportunity_type_titles">
+                    <span class="badge bg-primary" tal:content="type" />
+          </span>
+          </h4>
 
-  </metal:block>
-  </metal:content-core>
+
+      <div id="opportunity-date">
+        <dl>  
+            <dt>Opening Date</dt>
+            <dd tal:content="context/opportunity_open | nothing"/>
+            <dt>Closing Date</dt>
+            <dd tal:content="context/opportunity_close | nothing" />
+        </dl>
+      </div>
+
+
+  <div tal:content="structure context/text/output | nothing" />
+
+  <div tal:replace="structure provider:plone.belowcontentbody" />
+
+
+      </tal:main-macro>
+    </metal:main>
+
+
 </body>
 </html>
