@@ -61,14 +61,6 @@ class Opportunities(object):
             # organisation
             VocabItem('grants', _('Grants')),
 
-            # A grant is a fund given by a person or organization, often
-            # a public body, charitable foundation, a specialised
-            # grant-making institution, or in some cases a business with
-            # a corporate social responsibility mission, to an
-            # individual or another entity, usually, a non-profit
-            # organisation
-            VocabItem('grants', _('Grants')),
-
             # Short-term work experiences intended for skills-building
             # and civic contribution
             VocabItem('internships', _('Internships')),
