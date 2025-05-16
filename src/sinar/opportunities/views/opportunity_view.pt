@@ -37,6 +37,12 @@
 
   <div tal:content="structure context/text/output | nothing" />
 
+  <dl class="row">
+      <dt>For more information:</dt>
+      <dd><a tal:attributes="href context/website_url | nothing">Link</a></dd>
+  </dl>
+
+
   <div tal:replace="structure provider:plone.belowcontentbody" />
 
 
