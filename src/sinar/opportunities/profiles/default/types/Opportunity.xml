@@ -59,6 +59,7 @@
     <!--<element value="plone.selectablecontrainstypes" />-->
     <element value="sinar.opportunities.opportunity_type" />
     <element value="sinar.opportunities.opportunity_deadline" />
+    <element value="sinar.miscbehavior.website_url" />
   </property>
 
   <!-- View information -->
