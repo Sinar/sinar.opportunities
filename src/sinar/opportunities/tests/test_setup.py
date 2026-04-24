@@ -9,7 +9,6 @@ from sinar.opportunities.testing import (  # noqa: E501
 
 import unittest
 
-
 try:
     from Products.CMFPlone.utils import get_installer
 except ImportError:

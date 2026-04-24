@@ -11,7 +11,6 @@ from plone.supermodel import model
 # from zope import schema
 from zope.interface import implementer
 
-
 # from sinar.opportunities import _
 
 

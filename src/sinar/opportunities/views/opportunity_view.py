@@ -7,8 +7,8 @@ from zope.interface import Interface
 from zope.publisher.browser import BrowserView
 from zope.schema.interfaces import IVocabularyFactory
 
-
 # from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
+
 
 class IOpportunityView(Interface):
     """ Marker Interface for IOpportunityView"""
