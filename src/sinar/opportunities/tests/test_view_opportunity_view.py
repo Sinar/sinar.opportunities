@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
-from sinar.opportunities.testing import SINAR_OPPORTUNITIES_FUNCTIONAL_TESTING
-from sinar.opportunities.testing import SINAR_OPPORTUNITIES_INTEGRATION_TESTING
-from sinar.opportunities.views.opportunity_view import IOpportunityView
 from plone import api
 from plone.app.testing import setRoles
 from plone.app.testing import TEST_USER_ID
+from sinar.opportunities.testing import SINAR_OPPORTUNITIES_FUNCTIONAL_TESTING
+from sinar.opportunities.testing import SINAR_OPPORTUNITIES_INTEGRATION_TESTING
+from sinar.opportunities.views.opportunity_view import IOpportunityView
 from zope.component import getMultiAdapter
 from zope.interface.interfaces import ComponentLookupError
 

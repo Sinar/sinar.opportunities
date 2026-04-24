@@ -1,11 +1,12 @@
 # -*- coding: utf-8 -*-
 
 # from sinar.opportunities import _
-from zope.publisher.browser import BrowserView
 from zope.component import getUtility
-from zope.schema.interfaces import IVocabularyFactory
 from zope.interface import implementer
 from zope.interface import Interface
+from zope.publisher.browser import BrowserView
+from zope.schema.interfaces import IVocabularyFactory
+
 
 # from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 

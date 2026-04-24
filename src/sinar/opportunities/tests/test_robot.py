@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
-from sinar.opportunities.testing import SINAR_OPPORTUNITIES_ACCEPTANCE_TESTING  # noqa: E501
 from plone.app.testing import ROBOT_TEST_LEVEL
 from plone.testing import layered
+from sinar.opportunities.testing import (  # noqa: E501
+    SINAR_OPPORTUNITIES_ACCEPTANCE_TESTING,
+)
 
 import os
 import robotsuite

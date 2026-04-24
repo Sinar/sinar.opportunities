@@ -3,7 +3,9 @@
 from plone import api
 from plone.app.testing import setRoles
 from plone.app.testing import TEST_USER_ID
-from sinar.opportunities.testing import SINAR_OPPORTUNITIES_INTEGRATION_TESTING  # noqa: E501
+from sinar.opportunities.testing import (  # noqa: E501
+    SINAR_OPPORTUNITIES_INTEGRATION_TESTING,
+)
 
 import unittest
 
@@ -34,9 +36,8 @@ class TestSetup(unittest.TestCase):
 
     def test_browserlayer(self):
         """Test that ISinarOpportunitiesLayer is registered."""
-        from sinar.opportunities.interfaces import (
-            ISinarOpportunitiesLayer)
         from plone.browserlayer import utils
+        from sinar.opportunities.interfaces import ISinarOpportunitiesLayer
         self.assertIn(
             ISinarOpportunitiesLayer,
             utils.registered_layers())
@@ -64,7 +65,6 @@ class TestUninstall(unittest.TestCase):
 
     def test_browserlayer_removed(self):
         """Test that ISinarOpportunitiesLayer is removed."""
-        from sinar.opportunities.interfaces import \
-            ISinarOpportunitiesLayer
         from plone.browserlayer import utils
+        from sinar.opportunities.interfaces import ISinarOpportunitiesLayer
         self.assertNotIn(ISinarOpportunitiesLayer, utils.registered_layers())

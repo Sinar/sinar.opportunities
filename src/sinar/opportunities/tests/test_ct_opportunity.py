@@ -1,17 +1,15 @@
 # -*- coding: utf-8 -*-
-from sinar.opportunities.content.opportunity import IOpportunity  # NOQA E501
-from sinar.opportunities.testing import SINAR_OPPORTUNITIES_INTEGRATION_TESTING  # noqa
 from plone import api
 from plone.api.exc import InvalidParameterError
 from plone.app.testing import setRoles
 from plone.app.testing import TEST_USER_ID
 from plone.dexterity.interfaces import IDexterityFTI
+from sinar.opportunities.content.opportunity import IOpportunity  # NOQA E501
+from sinar.opportunities.testing import SINAR_OPPORTUNITIES_INTEGRATION_TESTING  # noqa
 from zope.component import createObject
 from zope.component import queryUtility
 
 import unittest
-
-
 
 
 class OpportunityIntegrationTest(unittest.TestCase):
