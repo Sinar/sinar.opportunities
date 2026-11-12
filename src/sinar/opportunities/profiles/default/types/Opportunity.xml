@@ -60,6 +60,7 @@
     <element value="sinar.opportunities.opportunity_type" />
     <element value="sinar.opportunities.opportunity_deadline" />
     <element value="sinar.miscbehavior.website_url" />
+    <element value="sinar.project.projects" />
   </property>
 
   <!-- View information -->

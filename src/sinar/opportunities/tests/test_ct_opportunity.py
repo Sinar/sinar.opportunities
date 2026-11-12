@@ -31,6 +31,10 @@ class OpportunityIntegrationTest(unittest.TestCase):
         fti = queryUtility(IDexterityFTI, name='Opportunity')
         self.assertTrue(fti)
 
+    def test_ct_opportunity_fti_behaviors(self):
+        fti = queryUtility(IDexterityFTI, name='Opportunity')
+        self.assertIn('sinar.project.projects', fti.behaviors)
+
     def test_ct_opportunity_factory(self):
         fti = queryUtility(IDexterityFTI, name='Opportunity')
         factory = fti.factory
