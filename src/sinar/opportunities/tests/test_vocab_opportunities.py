@@ -19,13 +19,13 @@ class OpportunitiesIntegrationTest(unittest.TestCase):
         setRoles(self.portal, TEST_USER_ID, ['Manager'])
 
     def test_vocab_opportunities(self):
-        vocab_name = 'sinar.opportunities.Opportunities'
+        vocab_name = 'sinar.opportunities.opportunity_types'
         factory = getUtility(IVocabularyFactory, vocab_name)
         self.assertTrue(IVocabularyFactory.providedBy(factory))
 
         vocabulary = factory(self.portal)
         self.assertTrue(IVocabularyTokenized.providedBy(vocabulary))
         self.assertEqual(
-            vocabulary.getTerm('sony-a7r-iii').title,
-            _(u'Sony Aplha 7R III'),
+            vocabulary.getTerm('fellowships').title,
+            _(u'Fellowships'),
         )

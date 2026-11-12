@@ -2,7 +2,7 @@
 from plone.app.testing import setRoles
 from plone.app.testing import TEST_USER_ID
 from plone.behavior.interfaces import IBehavior
-from sinar.opportunities.behaviors.opportunity_type import IOpportunityTypeMarker
+from sinar.opportunities.behaviors.opportunity_type import IOpportunityTypesMarker
 from sinar.opportunities.testing import SINAR_OPPORTUNITIES_INTEGRATION_TESTING  # noqa
 from zope.component import getUtility
 
@@ -22,5 +22,5 @@ class OpportunityTypeIntegrationTest(unittest.TestCase):
         behavior = getUtility(IBehavior, 'sinar.opportunities.opportunity_type')
         self.assertEqual(
             behavior.marker,
-            IOpportunityTypeMarker,
+            IOpportunityTypesMarker,
         )
